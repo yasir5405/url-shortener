@@ -5,3 +5,7 @@ export const linkValidation = z.object({
 });
 
 export type LinkInput = z.infer<typeof linkValidation>;
+
+export const slugValidation = z.object({
+  slug: z.string({ error: "Please provide a valid slug." }),
+});
