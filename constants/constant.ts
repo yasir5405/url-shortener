@@ -1,0 +1,2 @@
+export const BASE62 =
+  "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
