@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { DiaTextReveal } from "../ui/dia-text-reveal";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +28,11 @@ const Navbar = () => {
       )}
     >
       <Link href={"/"} className="font-bold text-xl">
-        ShoreLine
+        <DiaTextReveal
+          className="text-xl font-semibold tracking-tight"
+          text="ShoreLine"
+          colors={["#A97CF8", "#F38CB8", "#FDCC92"]}
+        />
       </Link>
 
       <div className="h-full w-fit flex items-center justify-center gap-2">
