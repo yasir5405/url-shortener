@@ -1,10 +1,10 @@
 import prisma from "@/lib/prisma";
 import { ApiResponse } from "@/lib/types/schema";
 import { slugValidation } from "@/lib/validations/shorten";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(
-  req: Request,
+  _: NextRequest,
   { params }: { params: Promise<{ slug: string }> },
 ) {
   const { slug } = await params;
